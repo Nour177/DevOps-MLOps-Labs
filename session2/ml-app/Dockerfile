@@ -17,5 +17,10 @@ COPY . .
 # Create models directory for storing trained models
 RUN mkdir -p models
 
+# Expose port 
+EXPOSE 8000
+
 # Run Training
 CMD ["python", "src/train.py"]
+
+
